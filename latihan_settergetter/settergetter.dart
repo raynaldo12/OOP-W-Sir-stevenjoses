@@ -1,13 +1,12 @@
+import 'pakaian.dart';
 void main () {
-var pakaian1 = Pakaian(jenis: "Celana",warna: "Biru",harga: 192000,berat: 2);
+var pakaian1 = Pakaian(jenis: "Celana",warna: "Biru");
 
+
+pakaian1.inputwarna='hikau';
+pakaian1.ubahatribut('ábu','Kolor',10,1200);
+print(pakaian1.tampilwarna);
+pakaian1.tampilatribut();
 }
 
-class Pakaian {
-  String? jenis;
-  String? warna;
-  int? harga;
-  int? berat;
 
-  Pakaian({this.jenis, this.warna, this.harga, this.berat});
-}
